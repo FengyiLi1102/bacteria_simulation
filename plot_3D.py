@@ -8,15 +8,17 @@ import pandas as pd
 from scipy.interpolate import griddata
 
 
+# Import data from local csv
 data = pd.read_csv(r'Data_10_10_0.05.csv')
 
+# Set x, y, z data
 x = data.loc[:40, 'N']
 y = data.loc[:40, 'd']
 z = data.loc[:40, 'mean']
 
 xyz = {'x': x, 'y': y, 'z': z}
 
-# put the data into a pandas DataFrame (this is what my data looks like)
+# put the data into a pandas DataFrame
 df = pd.DataFrame(xyz, index=range(len(xyz['x']))) 
 
 # re-create the 2D-arrays
@@ -40,6 +42,5 @@ ax.zaxis.set_major_formatter(FormatStrFormatter('%.02f'))
 
 fig.colorbar(surf, shrink=0.5, aspect=5)
 plt.title('T_1/2 with N, d and d2 combinations')
-# ~~~~ MODIFICATION TO EXAMPLE ENDS HERE ~~~~ #
 
-plt.show()
+# plt.show()
