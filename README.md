@@ -7,3 +7,9 @@ In this simulation, the bacteria are allocated into different colonies. Colonies
 The environment of the simulation is generated with two type of strips aligned one by one. Coated strips constrain the movement of bacteria only in the current coated region. Bacteria in the non-coated strips can move to coated strips or stay in the current region. The shape of the environment is a square in this simulation, but it can be flexibly changed.  
 
 ## Colony
+
+## Bacteria
+
+## Problems
+
+## Analysis
