@@ -1,4 +1,4 @@
-# Bacteria population on coated and non-coated strips simulation (2D)
+# Bacteria population on coated and non-coated strips (2D)
 
 In this simulation, the bacteria are allocated into different colonies. Colonies have synergistic or competitive relationships. Synergistic colonies will merge into one integrity if they overlap with each other, and competitive colonies will fight with each other until their colonies do not overlap any more. Bacteria can move, die, duplicate, eat and fight, and these actions depend on some specific properties.
 
