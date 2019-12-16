@@ -1,6 +1,6 @@
 # Bacteria population on coated and non-coated strips (2D)
 
-In this simulation, the bacteria are allocated into different colonies with a synergistic or competitive relationship in a fixed environment made of two types of materials. Bacteria can move, die, duplicate, eat and fight, and these actions depend on characterizations of the bacteria. The aim of this simulation is to find the best combination of two strips with their widths and numbers used.
+<p style='text-align: justify;'> In this simulation, the bacteria are allocated into different colonies with a synergistic or competitive relationship in a fixed environment made of two types of materials. Bacteria can move, die, duplicate, eat and fight, and these actions depend on characterizations of the bacteria. The aim of this simulation is to find the best combination of two strips with their widths and numbers used. </p> 
 
 ## Environment
 
