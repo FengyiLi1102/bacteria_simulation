@@ -41,7 +41,7 @@ Several properties are associated with the bacteria:
 <p align="center">
   <img width="130" height="45" src="https://github.com/FengyiLi1102/bacteria_simulation/blob/master/death_rate.gif">
 </p> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where 
 
 
 ## Problems
