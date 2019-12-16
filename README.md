@@ -30,6 +30,20 @@ At the beginning of the simulation, all colonies can have a regular shape such a
 
 ## Bacteria
 
+Several properties are associated with the bacteria:
+
+1. **Position**: A pair of coordinates that describes the position of the bacteria in the environment.
+
+2. **Neighbours**: The number of neighrbours of a bacteria is equal to the number of [Voronoi cell](https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.spatial.Voronoi.html) around the it.
+
+3. **Death_rate**: It is calculated by the equation
+
+<p align="center">
+  <img width="130" height="45" src="https://github.com/FengyiLi1102/bacteria_simulation/blob/master/death_rate.gif">
+</p> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where 
+
+
 ## Problems
 
 ## Analysis
