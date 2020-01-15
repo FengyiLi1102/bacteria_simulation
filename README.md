@@ -54,6 +54,25 @@ Several properties are associated with the bacteria:
 
 
 ## Problems
+While developing a solution to this challenge a few key underlying facts were concluded and outlined below:
 
+- **Simulation in a synergistic mode**
+
+It was noted regardless of the combination of strips chosen the number of bacteria never reached half of its starting value and as a result no value for the half life could be obtained. This indicates that in a synergistic mode colony growth and bacteria reproduction is favoured regardless of the strips and their associated parameters. The growth of the total bacteria population follows an exponential pattern and after 30 or so steps the time required to complete a step became unreasonable to work with.
+
+
+- **Simulation in a competitive mode**
+
+In the competitive mode of this simulation the total population of bacteria dropped to half their initial value very rapidly (in many cases within the first step). In most situations, the colonies initially set up will overlap with each other with the number of three or even four. This causes a rapid drop of bacteria due to random selection of bacteria from each colony and almost same strength at the first step. Food was rapidly eaten, and the populations of the bacteria would completely die out very rapidly. This meant it was very difficult to interpolate half life data and find a minimum or to find the standard deviations of the half life to within 0.2(T_1/2).
+
+
+- **Note on convex hull**
+
+In the competitive mode, as a result of the rapid death of the majority of the bacteria, there arose situations where only two bacteria were left after fighting with another colony. Since a convex hull requires at minimum three points a line remained and an alternative algorithm was introduced (found in overlap_checking.py). Also, if there are three or fewer than three bacteria in one colony, this colony cannot attend fight because if it overlaps with more than three colonies it does not have enough bacteria to fight with other colonies.
+
+
+- **Note on duplication and Voronoi cells**
+
+In the case that the duplicate of a bacteria inhabited the same point in space as the parent bacteria the two were treated as one in the construction of the Voronoi cell and when calculated the neighbours around certain bacteria. Therefore, a small modification was made in ‘duplicate’ method in Colony class that duplicated bacteria will be randomly placed around the original bacteria within an enough small region to make the Voronoi function work properly. The new position will not be out of the playground or from coated region to uncoated one and the effect of this modification on the total result is very small.
 
 ## Analysis
